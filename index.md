@@ -2,15 +2,15 @@
 layout: project_page
 permalink: /
 
-title: On Computable Numbers, with an Application to the Entscheidungsproblem
+title: CCStory - A Character-Consistent Story Visualization Model for Various Domains Without Fine-tuning
 authors:
-    A. M. Turing
+    H. M. YANG, H. K. YANG, K. H. MIN
 affiliations:
-    King's College, Cambridge
-paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
-video: https://www.youtube.com/results?search_query=turing+machine
-code: https://github.com/topics/turing-machines
-data: https://huggingface.co/docs/datasets
+    Sangmyung university
+# paper: 
+# video: https://www.youtube.com/results?search_query=turing+machine
+# code: https://github.com/topics/turing-machines
+# data: https://huggingface.co/docs/datasets
 ---
 
 <!-- Using HTML to center the abstract -->
@@ -18,19 +18,7 @@ data: https://huggingface.co/docs/datasets
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-The "computable" numbers may be described briefly as the real
-numbers whose expressions as a decimal are calculable by finite means.
-Although the subject of this paper is ostensibly the computable numbers.
-it is almost equally easy to define and investigate computable functions
-of an integral variable or a real or computable variable, computable
-predicates, and so forth. The fundamental problems involved are,
-however, the same in each case, and I have chosen the computable numbers
-for explicit treatment as involving the least cumbrous technique. I hope
-shortly to give an account of the relations of the computable numbers,
-functions, and so forth to one another. This will include a development
-of the theory of functions of a real variable expressed in terms of computable
-numbers. According to my definition, a number is computable
-if its decimal can be written down by a machine...
+Recent story visualization models generate a sequence of scenes using unconstrained characters from stories of various lengths. These models face serious challenges in preserving the consistency of the characters across the generated scenes. We devise CCStory, which is a novel story visualization model that preserves the consistency of the characters without fine tuning by processing the scenes and the characters in a separate way. To improve the quality of the generated characters, we propose a method that processes the face and the pose of a character using different approaches.  In order to reflect users' intention for a consistent character generation, our model takes a face image as an image prompt for a character. This strategy allows consistent face generation without fine tuning. For a consistent generation of the pose of a character, we employ the depth map of a base character, which is synthesized from the pose specified in the prompt of the scene. By processing the face and pose separately, our model preserves consistency in the character, which is then combined with the background to complete the story visualization results. The excellence of our results is demonstrated  through the evaluation of the generated images in various aspects including the coincidence with the input prompts, the aesthetic quality and the completeness of the scene.
         </div>
     </div>
 </div>
